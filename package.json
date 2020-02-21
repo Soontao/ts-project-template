@@ -1,0 +1,63 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "ts:build": "tsc",
+    "lint:fix": "eslint src/** --fix",
+    "release": "standard-version --no-verify && git push --follow-tags origin master",
+    "coverage": "npm test -- --coverage --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VirtualOctopus/VirtualOctopusJS.git"
+  },
+  "engines": {
+    "node": ">10"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/cheerio": "^0.22.16",
+    "@types/jest": "^24.9.0",
+    "@types/lodash": "^4.14.149",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "commitlint": "^8.3.5",
+    "eslint": "^6.8.0",
+    "husky": "^4.0.10",
+    "jest": "^24.9.0",
+    "standard-version": "^7.0.1",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "jest": {
+    "testTimeout": 30000,
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!**/node_modules/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules/",
+      "src/bin"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "/src/.*\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
