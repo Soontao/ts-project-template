@@ -4,8 +4,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --detectOpenHandles",
-    "ts:build": "tsc",
-    "lint:fix": "eslint src/** --fix",
+    "build": "tsc",
+    "lint": "eslint src/** --fix",
     "release": "standard-version --no-verify && git push --follow-tags origin master",
     "coverage": "npm test -- --coverage --no-cache"
   },
