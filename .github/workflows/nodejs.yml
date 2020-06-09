@@ -16,6 +16,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+        
     - name: npm install, build, and test
       run: |
         npm install
@@ -23,7 +32,9 @@ jobs:
         npm run coverage
       env:
         CI: true
+
     - name: upload coverage
       uses: codecov/codecov-action@v1
       with: 
+        # remember add 'CODECOV_TOKEN' to your github secrets
         token: ${{ secrets.CODECOV_TOKEN }}
