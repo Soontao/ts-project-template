@@ -21,7 +21,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^25.2.3",
-    "@types/node": "^14.0.6",
+    "@types/node": "^14.0.12",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "commitlint": "^8.3.5",
@@ -31,7 +31,7 @@
     "standard-version": "^8",
     "ts-jest": "^26",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   },
   "jest": {
     "testTimeout": 30000,
