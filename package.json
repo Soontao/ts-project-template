@@ -9,12 +9,8 @@
     "release": "standard-version --no-verify && git push --follow-tags origin master",
     "coverage": "npm test -- --coverage --no-cache"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VirtualOctopus/VirtualOctopusJS.git"
-  },
   "engines": {
-    "node": ">10"
+    "node": ">=10"
   },
   "license": "MIT",
   "dependencies": {},
@@ -26,33 +22,12 @@
     "@typescript-eslint/parser": "^2.34.0",
     "commitlint": "^9.0.1",
     "eslint": "^6",
-    "husky": "^4.2.3",
+    "husky": "^4.2.5",
     "jest": "^26",
     "standard-version": "^8",
     "ts-jest": "^26",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
-  },
-  "jest": {
-    "testTimeout": 30000,
-    "transform": {
-      ".(ts|tsx)": "ts-jest"
-    },
-    "collectCoverageFrom": [
-      "src/**/*.ts",
-      "!**/node_modules/**"
-    ],
-    "coveragePathIgnorePatterns": [
-      "node_modules/",
-      "src/bin"
-    ],
-    "testEnvironment": "node",
-    "testRegex": "/src/.*\\.test\\.ts$",
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json"
-    ]
   },
   "husky": {
     "hooks": {
