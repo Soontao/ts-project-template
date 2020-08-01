@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "jest --detectOpenHandles --passWithNoTests",
     "build": "tsc",
     "lint": "eslint src/** --fix",
     "release": "standard-version --no-verify && git push --follow-tags origin master",
@@ -20,7 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "commitlint": "^9.1.0",
-    "eslint": "^6",
+    "eslint": "^7.6.0",
     "husky": "^4.2.5",
     "jest": "^26.2.2",
     "standard-version": "^8.0.2",
