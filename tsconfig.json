@@ -1,19 +1,5 @@
 {
-  "compilerOptions": {
-    "charset": "UTF-8",
-    "newLine": "lf",
-    "target": "ES2018",
-    "module": "CommonJS",
-    "outDir": "lib",
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "declaration": true,
-    "lib": [
-      "ES6"
-    ]
-  },
+  "extends": "./tsconfig.base",
   "include": [
     "src",
     "src/bin"

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
+    "prebuild": "rimraf lib",
     "test": "jest --detectOpenHandles --passWithNoTests",
     "build": "tsc",
     "lint": "eslint src/** --fix",
@@ -23,6 +24,7 @@
     "eslint": "^7.6.0",
     "husky": "^4.2.5",
     "jest": "^26.3.0",
+    "rimraf": "^3.0.2",
     "standard-version": "^8.0.2",
     "ts-jest": "^26.2.0",
     "ts-node": "^8.10.2",
