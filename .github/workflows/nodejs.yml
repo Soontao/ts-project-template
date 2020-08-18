@@ -44,6 +44,3 @@ jobs:
 
     - name: upload coverage
       uses: codecov/codecov-action@v1
-      with: 
-        # remember add 'CODECOV_TOKEN' to your github secrets
-        token: ${{ secrets.CODECOV_TOKEN }}
