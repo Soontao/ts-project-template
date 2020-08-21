@@ -1,9 +1,10 @@
-name: Package Release
+name: node-release
 
 on: 
-    push:
-        tags:
-            - '*'
+  push:
+    tags:
+      - '*'
+
 jobs:
   publish:
 
