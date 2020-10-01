@@ -1,3 +1,4 @@
+# Remove this CI action if not required
 name: graalvm-test
 
 on:
