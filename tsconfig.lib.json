@@ -1,10 +1,10 @@
 {
   "extends": "./tsconfig.base",
   "include": [
-    "src",
-    "src/bin"
+    "lib"
   ],
   "exclude": [
-    "commitlint.config.js"
+    "node_modules",
+    "src",
   ]
 }
