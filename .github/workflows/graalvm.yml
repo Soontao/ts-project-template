@@ -1,4 +1,4 @@
-name: GraalVM CI
+name: graalvm-test
 
 on:
   push:
