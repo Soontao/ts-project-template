@@ -1,9 +1,10 @@
-name: Package Release
+name: node-release
 
 on: 
-    push:
-        tags:
-            - '*'
+  push:
+    tags:
+      - '*'
+
 jobs:
   publish:
 
@@ -11,10 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js 10.x
+    - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: 10.x
+        node-version: 12.x
         registry-url: https://registry.npmjs.org/
     
     - name: npm test
@@ -25,6 +26,6 @@ jobs:
         CI: true
     
     - name: npm auth & publish
-      run: npm run ts:build && npm publish --access public --tag latest
+      run: npm run build && npm publish --access public --tag latest
       env:
         NODE_AUTH_TOKEN: ${{secrets.Z_NPM_TOKEN}}

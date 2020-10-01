@@ -2,8 +2,9 @@
   "compilerOptions": {
     "charset": "UTF-8",
     "newLine": "lf",
-    "target": "ES2018",
+    "target": "ES2019",
     "module": "CommonJS",
+    "sourceMap": true,
     "outDir": "lib",
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -11,7 +12,13 @@
     "experimentalDecorators": true,
     "declaration": true,
     "lib": [
-      "ES6"
+      "ES6",
+      "DOM",
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "ES2018",
+      "ES2019"
     ]
   }
 }
