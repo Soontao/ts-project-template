@@ -2,12 +2,12 @@ name: node-ts-next-test
 
 on:
   push:
-    branches: [ main ]
+    branches: '*'
   pull_request:
-    branches: [ main ]
-  # daily check at 01:00 AM
+    branches: '*'
+  # daily check at UTC 01:00 AM
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '0 2 * * *'
 
 jobs:
   build:
@@ -39,6 +39,6 @@ jobs:
         npm install
         npm install typescript@next
         npm run build --if-present
-        npm run coverage
+        npm run test
       env:
         CI: true
