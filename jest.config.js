@@ -13,7 +13,6 @@ module.exports = {
   ],
   coveragePathIgnorePatterns: [
     "node_modules/",
-    "src/bin"
   ],
   testEnvironment: "node",
   testRegex: "/test/.*\\.test\\.ts$",
