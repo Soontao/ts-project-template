@@ -4,6 +4,7 @@
     "rvest.vs-code-prettier-eslint",
     "dbaeumer.vscode-eslint",
     "orta.vscode-jest",
-    "andys8.jest-snippets"
+    "andys8.jest-snippets",
+    "streetsidesoftware.code-spell-checker"
   ]
 }

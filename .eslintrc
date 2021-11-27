@@ -39,6 +39,16 @@
     "@typescript-eslint/no-explicit-any": [
       0
     ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-unused-vars": "error",
+    "space-before-function-paren": "error",
+    "space-before-blocks": "error",
+    "space-infix-ops": "error",
+    "comma-spacing": "error",
+    "arrow-spacing": "error",
     "quotes": [
       "error",
       "double",
