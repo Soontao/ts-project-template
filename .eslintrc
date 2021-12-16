@@ -77,8 +77,11 @@
     "spellcheck/spell-checker": [
       "warn",
       {
+        "ignoreRequire": true,
         // put false-positive words here
-        "skipWords": []
+        "skipWords": [
+          "javascript"
+        ]
       }
     ]
   }
