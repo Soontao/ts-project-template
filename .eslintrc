@@ -3,7 +3,8 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "spellcheck"
   ],
   "env": {
     "node": true,
@@ -71,6 +72,13 @@
       2,
       {
         "SwitchCase": 1
+      }
+    ],
+    "spellcheck/spell-checker": [
+      "warn",
+      {
+        // put false-positive words here
+        "skipWords": []
       }
     ]
   }
