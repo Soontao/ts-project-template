@@ -53,6 +53,13 @@
       "error",
       "always"
     ],
+    "camelcase": [
+      "error",
+      {
+        "ignoreImports": true,
+        "ignoreGlobals": true
+      }
+    ],
     "space-infix-ops": "off",
     "@typescript-eslint/space-infix-ops": "error",
     "comma-spacing": "error",
