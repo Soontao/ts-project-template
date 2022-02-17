@@ -19,13 +19,16 @@ jobs:
           node-version: 16.x
           registry-url: https://registry.npmjs.org/
 
+      - name: npm install
+        run: npm install
+
       - name: npm test
-        run: |
-          npm install
-          npm test
-          npm shrinkwrap
+        run: npm test
         env:
           CI: true
+
+      - name: npm shrinkwrap
+        run: npm shrinkwrap
 
       - name: npm auth & publish
         run: npm run build && npm publish --access public --tag latest
