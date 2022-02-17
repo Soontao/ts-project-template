@@ -1,7 +1,7 @@
 ---
 name: Help Wanted
 about: Help Wanted
-title: ''
+title: '[Question]'
 labels: help wanted
 assignees: Soontao
 
