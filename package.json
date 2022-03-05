@@ -4,7 +4,6 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --detectOpenHandles --passWithNoTests",
-    "prettier": "prettier --check --write src",
     "prebuild": "rimraf lib",
     "build": "tsc",
     "postbuild": "tsc --noEmit --p tsconfig.lib.json",
@@ -20,7 +19,6 @@
     "@typescript-eslint/parser": "^5.13.0",
     "commitlint": "^16.2.1",
     "eslint": "^8.10.0",
-    "eslint-plugin-spellcheck": "^0.0.19",
     "husky": "~4.3.8",
     "jest": "^27.5.1",
     "rimraf": "^3.0.2",
