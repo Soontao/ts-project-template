@@ -12,6 +12,10 @@
     "jest/globals": true
   },
   "parserOptions": {
+    "project": [
+      "./tsconfig.json",
+      "./test/tsconfig.json"
+    ],
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
@@ -20,7 +24,7 @@
     }
   },
   "extends": [
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended"
   ],
   "rules": {
@@ -86,6 +90,9 @@
       {
         "SwitchCase": 1
       }
+    ],
+    "@typescript-eslint/no-floating-promises": [
+      "warn"
     ]
   }
 }
