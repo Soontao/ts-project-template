@@ -47,10 +47,5 @@ jobs:
       - name: test & coverage
         run: npm run coverage
 
-      - name: publish test results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        with:
-          files: "**/junit.xml"
-
       - name: upload coverage
         uses: codecov/codecov-action@v1
