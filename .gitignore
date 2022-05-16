@@ -111,3 +111,6 @@ lib
 
 # dev
 .env
+
+# test
+junit.xml

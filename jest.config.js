@@ -29,4 +29,5 @@ module.exports = {
       statements: 85,
     },
   },
+  reporters: ["default", ["jest-junit", { outputDirectory: "coverage" }]]
 };

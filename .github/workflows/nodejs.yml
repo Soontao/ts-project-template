@@ -50,3 +50,8 @@ jobs:
 
       - name: test
         run: npm run test
+
+      - name: publish test results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        with:
+          files: "**/junit.xml"
