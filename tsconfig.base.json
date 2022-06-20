@@ -5,6 +5,7 @@
     "target": "ES2019",
     "module": "CommonJS",
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "useUnknownInCatchVariables": false,
     "sourceMap": true,
     "outDir": "lib",
