@@ -1,6 +1,6 @@
 # Typescript Project Template
 
-typescript project template
+> the typescript project template
 
 ## Setup
 
@@ -10,6 +10,8 @@ typescript project template
 * start your work
 
 ## Release
+
+> for github
 
 * maintain your npm token with secret name `Z_NPM_TOKEN`
 * Run `npm run release` to publish a new version of your package
