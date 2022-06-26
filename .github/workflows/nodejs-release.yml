@@ -27,12 +27,15 @@ jobs:
         env:
           CI: true
 
-      - name: npm shrinkwrap
-        run: npm shrinkwrap
+      - run: npm shrinkwrap
 
       - run: npm run build
 
-      - name: npm auth & publish
-        run: npm publish --access public --tag latest
+      - name: npm auth
+        run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
         env:
-          NODE_AUTH_TOKEN: ${{secrets.Z_NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      - name: npm auth & publish
+        run: npm publish --access public
+
