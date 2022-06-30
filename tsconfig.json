@@ -1,10 +1,7 @@
 {
   "extends": "./tsconfig.base",
   "include": [
-    "src/**/*.ts",
-    "src/**/*.json",
+    "src"
   ],
-  "exclude": [
-    "commitlint.config.js"
-  ]
+  "exclude": []
 }
