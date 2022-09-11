@@ -2,6 +2,11 @@
 
 > the typescript project template
 
+<!-- 
+[![npm](https://img.shields.io/npm/v/<module-name>)](https://www.npmjs.com/package/<module-name>)
+![node-lts](https://img.shields.io/node/v-lts/<module-name>)
+-->
+
 ## Setup
 
 * `Use this template` to create new github repository.
