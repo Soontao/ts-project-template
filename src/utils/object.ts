@@ -1,4 +1,3 @@
-
 export const get = (object: any, path: string) => {
   if (path?.length > 0) {
     for (const part of path.split(".")) {
