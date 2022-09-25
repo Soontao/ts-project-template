@@ -6,12 +6,6 @@
     "source.fixAll": true,
     "source.organizeImports": true
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "cSpell.words": [
-    "autocrlf",
-    "npmjs",
-    "paren"
-  ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": ["autocrlf", "npmjs", "paren"]
 }
